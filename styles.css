@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Protest+Guerrilla&display=swap');
+body{
+    /* background:linear-gradient(90deg, #45105c 0%, #ff00cc 100%); */
+    background-image: url("background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment:fixed ;
+}
+.title-bar{
+    padding-top: 0.1em;
+    text-align: center;
+    font-family: "Protest Guerrilla", sans-serif;
+    font-style:normal;
+    font-size:60px;
+    /* font-weight: normal; */
+    color: white;
+}
+
+.showInfo{
+    position: relative;
+    margin-top:10px;
+    margin-left:10em;
+    margin-right:10em;
+    /* display:none; */
+}
+.infoPoster{
+    /* background-attachment: fixed; */
+    /* border-top-left-radius:1em;
+    border-top-right-radius:1em; */
+    border-radius: 1em;
+    position: relative;
+    height:40em;
+    background-image: url(placeHolder.jpg);
+    background-color: rgba(0, 0, 0, 0.2);
+    background-size:contain;
+    background-repeat:no-repeat ;
+    background-position: 20% center;
+}
+.infoTitle{
+    position: absolute;
+    font-size:xx-large;
+    left:50%;
+    top:5%;
+    background-color:rgba(0,0,0,0.5);
+    color: white;
+    padding:0.3em;
+    border-radius:0.5em;
+}
+.infoSummary{
+    font-family: 'Roboto', sans-serif;
+    padding-bottom:0.5em;
+}
+.infoText{
+    /* background-color: white; */
+    border-radius:8px;
+    padding:2em;
+    background-color:rgba(0,0,0,0.5);
+    position: absolute;
+    top:20%;
+    left: 50%;
+    right:2%;
+    color: white;
+}
+
+
+#query-display{
+    margin-top:0.5em;
+    margin-left:20px;
+    margin-right:20px;
+    width: fit-content;
+    padding-left:5em;
+    padding-top:0.5em;
+    padding-bottom:0.5em;
+    backdrop-filter: blur(10px);
+    background-color: rgba(243, 243, 243,0.3);
+    border: solid 0.5px rgba(255, 255, 255, 0.4);
+    border-radius: 1em; 
+}
+.searchform{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#submitbtn{
+    margin-top:1em;
+    height:3em;
+    width:3em;
+    border:none;
+    border-top-right-radius:1em;
+    border-bottom-right-radius:1em;
+    backdrop-filter: blur(10px);
+    background-color: rgba(243, 243, 243,0.3);
+}
+.showInput{
+margin-top:1em;
+margin-left:0px;
+width:30em;
+height:3em;
+backdrop-filter: blur(10px);
+background-color: rgba(243, 243, 243,0.3);
+/* background-color:rgba(90, 26, 90,0.5); */
+color: white;
+border:none;
+border-top-left-radius:1em;
+border-bottom-left-radius:1em;
+box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+.movie-card{
+    width:15em;
+    height:22.6em;
+    margin:3px;
+    border:unset !important;
+    position: relative;
+    /* background-image: url("placeHolder.jpg"); */
+    background-size:cover;
+    overflow: hidden;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+.movie-poster{
+    background-image: url("placeHolder.jpg");
+    width:15em;
+    height:20em;
+    background-size:cover;
+    background-position: center center;
+    transition: transform 0.5s ease;
+
+}
+.movie-poster:hover{
+    transform:scale(1.1);
+}
+
+#card-rating{
+    font-family: 'Rubik', sans-serif;
+    position: absolute;
+    background-color: rgba(9, 73, 126,0.5);
+    right:1em;
+    top:0.5em;
+    padding:0.05em;
+    color: white;
+    font-weight: bold;
+    border-radius:0.4em;
+}
+.card-teaxtarea{
+    font-family: 'Bebas Neue', sans-serif;
+    font-size:large;
+    font-weight:bold;
+    position: absolute;
+    bottom:0px;
+    display: flex;
+    padding-left:0.5em;
+    padding-right:0.5em;
+    padding-top:5px;
+    justify-content:space-between;
+    /* background-color: rgba(70, 49, 49,0.5); */
+    background-color: white;
+    width:100%;
+    /* color:white; */
+    text-align: center;
+}
+.card-type{
+    font-weight:300;
+    font-family: 'Rubik', sans-serif;
+}
