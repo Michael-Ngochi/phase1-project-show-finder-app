@@ -10,7 +10,7 @@ async function searchMovie(moviename){
          name:details.show.name,
          type:details.show.type,
          rating:details.show.rating.average ?? "N/A",
-         image:details.show.image?.medium ?? "placeHolder.jpg",
+         image:details.show.image?.medium ?? "placeHolder.png",
          year:details.show.premiered?.split("-")[0] ?? "N/A"
          }
     })
@@ -37,6 +37,7 @@ async function searchMovie(moviename){
     `
     moviecard.addEventListener("click",()=>{
     getFullInfo(movie.id);
+    getcast(movie.id);
     })
     
     queryDisplay.appendChild(moviecard)
@@ -51,7 +52,7 @@ async function searchMovie(moviename){
         name:show.name,
         type:show.type,
         rating:show.rating.average ?? "N/A",
-        image:show.image?.original ?? "placeHolder.jpg",
+        image:show.image?.original ?? "placeHolder.png",
         premiered:show.premiered ?? "N/A",
         ended:show.ended ?? "N/A",
         language:show.language,
@@ -64,6 +65,7 @@ async function searchMovie(moviename){
    }
    
    function displayShowInfo(show){
+    document.getElementById("genres").innerHTML=""
    document.getElementById("showInfo").style.display="block"
    document.getElementById("infoPoster").style.backgroundImage = `url(${show.image})`;
    document.getElementById("infoTitle").innerHTML=show.name
@@ -75,8 +77,34 @@ async function searchMovie(moviename){
         genreSpan.append(`  ${genre},`)
    }
    }
-   
-   
+
+async function getcast(showId) {
+    document.getElementById("showCast").innerHTML=""
+    let res= await fetch(`https://api.tvmaze.com/shows/${showId}/cast`)
+    let data=await res.json()
+    data.slice(0,10).map(actorData=>{
+        
+        let actor= actorData.person.name
+        let character= actorData.character.name
+        let image= actorData.person.image?.medium || 'default.png'
+    
+    console.log(actor)
+    let showCast=document.getElementById("showCast")
+    let actorCard=document.createElement("div")
+    actorCard.className="actor-card card"
+    actorCard.innerHTML=`
+                <img class="actorImg" src="${image}" alt="">
+                <div class="actor" id="actor" style="font-weight: 600; font-size:small;">${actor}</div>
+                <div class="character" id="character" style="font-weight: 300; font-size:smaller;">${character}</div>
+                `
+    showCast.appendChild(actorCard)
+}
+)
+
+
+    
+    
+}
    //searchMovie("silicon");
    let searchform=document.querySelector("#searchform")
         searchform.addEventListener("submit",()=>{
@@ -84,4 +112,6 @@ async function searchMovie(moviename){
         searchInput=document.querySelector("#showinput").value
         searchMovie(searchInput);
    })
+
+//    getcast(1719)   ;
 });

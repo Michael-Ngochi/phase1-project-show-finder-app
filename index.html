@@ -22,16 +22,27 @@
 </form>
 <div class="showInfo" id="showInfo">
     <div class="infoPoster" id="infoPoster">
-        <div class="infoTitle" id="infoTitle">Title</div>
         <div class="infoText">
+        <div class="infoTitle" id="infoTitle">Title</div>
             <div id="infoSummary" class="infoSummary">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nulla deserunt laborum temporibus voluptates? Ex enim id, aspernatur necessitatibus animi dignissimos beatae totam aliquam, officiis esse corrupti commodi nulla veritatis ut omnis unde! Similique, sint voluptatibus. Reprehenderit perspiciatis dignissimos quos magni ullam deserunt, quas voluptatum nemo ipsam voluptates vel quod cum.</div><br>
             <span id="infoPremiered">Premiered</span><br>
             <span id="infoLanguage">Language</span>
-
             <div>
                 <span><strong>Genres</strong></span>
                 <span id="genres"></span>
             </div>
+
+            
+                <hr>
+                <strong>Cast</strong>
+                <div class="showCast d-flex flex-wrap" id="showCast">
+                <div class="actor-card card" id="actorCard">
+                <img class="actorImg" src="https://static.tvmaze.com/uploads/images/medium_portrait/176/442173.jpg" alt="">
+                <div class="actor" id="actor" style="font-weight: 600; font-size:small;">Actor</div>
+                <div class="character" id="character" style="font-weight: 300; font-size: smaller;">character</div>
+                </div>
+                </div>
+
         </div>
     </div>
     <!-- <div class="infoText">
@@ -44,13 +55,12 @@
 <div id="query-display" class="d-flex flex-wrap">
 <div class="card movie-card">
 <span class="card-text" id="card-rating">rating</span>
-<div class="movie-poster" style="background-image: url(placeHolder.jpg);"></div>
+<div class="movie-poster" style="background-image: url(placeHolder.png);"></div>
 <div class="card-teaxtarea">
 <span class="card-title" id="card-title">title</span>
 <span class="card-type" id="card-type">type<span>
 </div>
 </div>
-
 </div>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
