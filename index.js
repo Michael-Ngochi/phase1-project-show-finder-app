@@ -1,3 +1,4 @@
+document.addEventListener("DOMContentLoaded",()=>{
 async function searchMovie(moviename){
     const res= await fetch(`https://api.tvmaze.com/search/shows?q=${moviename}`)
     const data= await res.json()
@@ -83,3 +84,4 @@ async function searchMovie(moviename){
         searchInput=document.querySelector("#showinput").value
         searchMovie(searchInput);
    })
+});
