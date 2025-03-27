@@ -83,10 +83,10 @@ async function getcast(showId) {
     let res= await fetch(`https://api.tvmaze.com/shows/${showId}/cast`)
     let data=await res.json()
     data.slice(0,10).map(actorData=>{
-        
-        let actor= actorData.person.name
-        let character= actorData.character.name
-        let image= actorData.person.image?.medium || 'default.png'
+
+     let actor= actorData.person.name
+     let character= actorData.character.name
+     let image= actorData.person.image?.medium || 'default.png'
     
     console.log(actor)
     let showCast=document.getElementById("showCast")
