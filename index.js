@@ -40,3 +40,46 @@ async function searchMovie(moviename){
     
     queryDisplay.appendChild(moviecard)
     }
+
+    async function getFullInfo(id){
+        console.log(`fetching for id:${id}`);
+         const res=await fetch(`https://api.tvmaze.com/shows/${id}`)
+         const show=await res.json()
+   
+         const fullInfo={
+        name:show.name,
+        type:show.type,
+        rating:show.rating.average ?? "N/A",
+        image:show.image?.original ?? "placeHolder.jpg",
+        premiered:show.premiered ?? "N/A",
+        ended:show.ended ?? "N/A",
+        language:show.language,
+        genres:show.genres,
+        summary:show.summary,
+         }
+          console.log(show);
+        displayShowInfo(fullInfo);
+         console.log(fullInfo);
+   }
+   
+   function displayShowInfo(show){
+   document.getElementById("showInfo").style.display="block"
+   document.getElementById("infoPoster").style.backgroundImage = `url(${show.image})`;
+   document.getElementById("infoTitle").innerHTML=show.name
+   document.getElementById("infoSummary").innerHTML=show.summary
+   document.getElementById("infoPremiered").innerHTML=`<strong>Premiered </strong>${show.premiered}`
+   document.getElementById("infoLanguage").innerHTML=`<strong>Language </strong>${show.language}`
+   for (genre of show.genres){
+        genreSpan=document.getElementById("genres")
+        genreSpan.append(`  ${genre},`)
+   }
+   }
+   
+   
+   //searchMovie("silicon");
+   let searchform=document.querySelector("#searchform")
+        searchform.addEventListener("submit",()=>{
+        event.preventDefault();
+        searchInput=document.querySelector("#showinput").value
+        searchMovie(searchInput);
+   })
