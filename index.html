@@ -13,6 +13,26 @@
     <title>Movie finder</title>
 </head>
 <body>
+    <button class=" favouritesbtn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop" aria-controls="offcanvasTop">Favourites <br> <i class="bi bi-heart-fill" style="color: rgb(238, 14, 208); font-size:30px;"></i></button>
+    <div class="offcanvas offcanvas-top" data-bs-theme="dark" tabindex="-1" id="offcanvasTop" aria-labelledby="offcanvasTopLabel" style="height:45vh;">
+        <div class="offcanvas-header ">
+          <h5 class="offcanvas-title text-center" id="offcanvasTopLabel">Favourites</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body d-inline-flex overflow-auto" id="favourites-body">
+            <div class="card movie-card">
+                <span class="card-text" id="card-rating">rating</span>
+                <div class="movie-poster" style="background-image: url(placeHolder.png);"></div>
+                <div class="card-teaxtarea">
+                <span class="card-title" id="card-title">title</span>
+                <span class="card-type" id="card-type">type<span>
+                </div>
+                </div>
+        </div>
+    </div>
+
+
+
 <div class="title-bar">
     Show finder
 </div>
@@ -22,6 +42,8 @@
 </form>
 <div class="showInfo" id="showInfo">
     <div class="infoPoster" id="infoPoster">
+        <div class="heart" id="heart"><i id="heartIcon" class="bi bi-heart" style="color: rgb(238, 14, 208);"></i>
+        </div>
         <div class="infoText">
         <div class="infoTitle" id="infoTitle">Title</div>
             <div id="infoSummary" class="infoSummary">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nulla deserunt laborum temporibus voluptates? Ex enim id, aspernatur necessitatibus animi dignissimos beatae totam aliquam, officiis esse corrupti commodi nulla veritatis ut omnis unde! Similique, sint voluptatibus. Reprehenderit perspiciatis dignissimos quos magni ullam deserunt, quas voluptatum nemo ipsam voluptates vel quod cum.</div><br>
@@ -31,8 +53,6 @@
                 <span><strong>Genres</strong></span>
                 <span id="genres"></span>
             </div>
-
-            
                 <hr>
                 <strong>Cast</strong>
                 <div class="showCast d-flex flex-wrap" id="showCast">
@@ -54,12 +74,12 @@
 
 <div id="query-display" class="d-flex flex-wrap">
 <div class="card movie-card">
-<span class="card-text" id="card-rating">rating</span>
+<!-- <span class="card-text" id="card-rating">rating</span>
 <div class="movie-poster" style="background-image: url(placeHolder.png);"></div>
 <div class="card-teaxtarea">
 <span class="card-title" id="card-title">title</span>
 <span class="card-type" id="card-type">type<span>
-</div>
+</div> -->
 </div>
 </div>
 

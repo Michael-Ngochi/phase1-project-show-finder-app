@@ -1,4 +1,44 @@
+
+
 document.addEventListener("DOMContentLoaded",()=>{
+
+async function addToFavourites(show){
+show.id = String(show.id);
+let res= await fetch("http://localhost:3000/favourites",{
+     method: 'POST',
+     headers: {
+       'Content-Type': 'application/json'
+     },
+     body: JSON.stringify(show)
+}
+);
+
+
+const data = await res.json();
+alert(`${show.name} has been added to your favourites!`)
+showFavourites();
+isFavourite(show.id);
+document.getElementById("showInfo").style.display="block"
+console.log('User added:', data);
+console.log("YOu have clicked on "+show.name)
+}
+
+
+async function removefromFavourites(id){
+     let res= await fetch(`http://localhost:3000/favourites/${id}`,{
+          method: 'DELETE',
+     });
+     if (res.ok){
+          alert("Removed from favourites!");
+          showFavourites();
+          isFavourite(id);
+          document.getElementById("showInfo").style.display="block"
+          console.log(`Show with ID ${id} was deleted.`);
+        } else {
+          console.error("Failed to delete favourite.");
+        }
+     }
+
 async function searchMovie(moviename){
     const res= await fetch(`https://api.tvmaze.com/search/shows?q=${moviename}`)
     const data= await res.json()
@@ -49,23 +89,35 @@ async function searchMovie(moviename){
          const show=await res.json()
    
          const fullInfo={
+        id:String(show.id),
         name:show.name,
         type:show.type,
         rating:show.rating.average ?? "N/A",
         image:show.image?.original ?? "placeHolder.png",
+        smallImage:show.image?.medium ?? "placeHolder.png",
         premiered:show.premiered ?? "N/A",
+        year:show.premiered?.split("-")[0] ?? "N/A",
         ended:show.ended ?? "N/A",
         language:show.language,
         genres:show.genres,
         summary:show.summary,
          }
-          console.log(show);
+          // console.log(show);
         displayShowInfo(fullInfo);
          console.log(fullInfo);
+
+         const oldHeart = document.getElementById("heart");
+         const newHeart = oldHeart.cloneNode(true);
+         oldHeart.parentNode.replaceChild(newHeart, oldHeart);
+         newHeart.addEventListener("click",()=>{
+         isAlreadyFav(show.id,fullInfo);
+     })
+
    }
-   
+
    function displayShowInfo(show){
-    document.getElementById("genres").innerHTML=""
+   isFavourite(show.id);
+   document.getElementById("genres").innerHTML=""
    document.getElementById("showInfo").style.display="block"
    document.getElementById("infoPoster").style.backgroundImage = `url(${show.image})`;
    document.getElementById("infoTitle").innerHTML=show.name
@@ -76,6 +128,8 @@ async function searchMovie(moviename){
         genreSpan=document.getElementById("genres")
         genreSpan.append(`  ${genre},`)
    }
+
+    
    }
 
 async function getcast(showId) {
@@ -100,11 +154,11 @@ async function getcast(showId) {
     showCast.appendChild(actorCard)
 }
 )
-
-
-    
-    
 }
+
+
+
+// })
    //searchMovie("silicon");
    let searchform=document.querySelector("#searchform")
         searchform.addEventListener("submit",()=>{
@@ -112,6 +166,98 @@ async function getcast(showId) {
         searchInput=document.querySelector("#showinput").value
         searchMovie(searchInput);
    })
+
+
+   async function showFavourites() {
+     try {
+       const res = await fetch("http://localhost:3000/favourites");
+       const shows = await res.json();
+   
+       const favouritesBody = document.getElementById("favourites-body");
+       favouritesBody.innerHTML = ""; // Clear previous content if needed
+   
+       for (const show of shows) {
+         console.log(show);
+   
+         const moviecard = document.createElement("div");
+         moviecard.className = "card movie-card";
+   
+         moviecard.innerHTML = `
+           <span class="card-text" id="card-rating">${show.rating}</span>
+           <div class="movie-poster" id="movie-poster" style="background-image: url(${show.image});"></div>
+           <div class="card-teaxtarea">
+             <span class="card-title" id="card-title">${show.name}</span>
+             <span class="card-type" id="card-type">${show.year}</span>
+           </div>
+         `;
+   
+         moviecard.addEventListener("click", () => {
+           getFullInfo(show.id);
+           getcast(show.id);
+         });
+   
+         favouritesBody.appendChild(moviecard);
+       }
+   
+     } catch (error) {
+       console.error("Failed to load favourites:", error);
+     }
+   }
+   
+
+
+   async function isAlreadyFav(id,fullInfo) {
+     try {
+       const res = await fetch("http://localhost:3000/favourites");
+       const favourites = await res.json();
+   
+       const found = favourites.some(show => show.id == id);
+   
+       if (!found) {
+              addToFavourites(fullInfo)
+         }
+
+       else{
+          removefromFavourites(id);
+       }
+     } catch (error) {
+       console.error("Error checking favourite:", error);
+     }
+   }
+
+   async function isFavourite(id) {        
+     try {
+       const res = await fetch("http://localhost:3000/favourites");
+       const favourites = await res.json();
+     //   console.log("cheking for show:"+id);
+
+       const found = favourites.some(show => show.id === id);
+       console.log(found);
+       const heartIcon = document.getElementById("heartIcon");
+   
+       if (found) {
+         if (heartIcon) {
+           heartIcon.classList.add("bi-heart-fill");
+           heartIcon.classList.remove("bi-heart");
+           heartIcon.style.color = " rgb(238, 14, 208)";
+         }
+
+       }else{
+         if (heartIcon) {
+           heartIcon.classList.add("bi-heart");
+           heartIcon.classList.remove("bi-heart-fill");
+           heartIcon.style.color = " rgb(238, 14, 208)";
+         }
+       }
+     } catch (error) {
+       console.error("Error checking favourite:", error);
+     }
+   }
+
+
+
+showFavourites();
+
 
 //    getcast(1719)   ;
 });

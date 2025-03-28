@@ -1,0 +1,179 @@
+{
+  "favourites": [
+    {
+      "id": "55138",
+      "name": "Arcane: League of Legends",
+      "type": "Animation",
+      "rating": 8.4,
+      "image": "https://static.tvmaze.com/uploads/images/original_untouched/536/1340287.jpg",
+      "smallImage": "https://static.tvmaze.com/uploads/images/medium_portrait/536/1340287.jpg",
+      "premiered": "2021-11-06",
+      "year": "2021",
+      "ended": "2024-11-23",
+      "language": "English",
+      "genres": [
+        "Action",
+        "Adventure",
+        "Fantasy"
+      ],
+      "summary": "<p>Set in utopian Piltover and the oppressed underground of Zaun, the story follows the origins of two iconic League champions — and the power that will tear them apart.</p>"
+    },
+    {
+      "id": "43031",
+      "name": "Reacher",
+      "type": "Scripted",
+      "rating": 8.2,
+      "image": "https://static.tvmaze.com/uploads/images/original_untouched/557/1392929.jpg",
+      "smallImage": "https://static.tvmaze.com/uploads/images/medium_portrait/557/1392929.jpg",
+      "premiered": "2022-02-04",
+      "year": "2022",
+      "ended": "N/A",
+      "language": "English",
+      "genres": [
+        "Drama",
+        "Action",
+        "Thriller"
+      ],
+      "summary": "<p><b>Reacher</b><i> </i>follows Jack Reacher, a veteran military police investigator who has just recently entered civilian life. Reacher is a drifter, carrying no phone and the barest of essentials as he travels the country and explores the nation he once served. When Reacher arrives in the small town of Margrave, Georgia, he finds a community grappling with its first homicide in 20 years. The cops immediately arrest him and eyewitnesses claim to place Reacher at the scene of the crime. While he works to prove his innocence, a deep-seated conspiracy begins to emerge, one that will require Reacher's keen mind and hard-hitting fists to deal with. One thing above all is for sure: They picked the wrong guy to take the fall.</p>"
+    },
+    {
+      "id": "17078",
+      "name": "The Grand Tour",
+      "type": "Reality",
+      "rating": 8.2,
+      "image": "https://static.tvmaze.com/uploads/images/original_untouched/180/451432.jpg",
+      "smallImage": "https://static.tvmaze.com/uploads/images/medium_portrait/180/451432.jpg",
+      "premiered": "2016-11-18",
+      "year": "2016",
+      "ended": "2024-09-13",
+      "language": "English",
+      "genres": [
+        "Comedy",
+        "Adventure"
+      ],
+      "summary": "<p>Jeremy Clarkson, Richard Hammond and James May are back with <b>The Grand Tour</b>. A show about adventure, excitement and friendship... as long as you accept that the people you call friends are also the ones you find extremely annoying. Sometimes it's even a show about cars. Follow them on their global adventure.</p>"
+    },
+    {
+      "id": "143",
+      "name": "Silicon Valley",
+      "type": "Scripted",
+      "rating": 8.4,
+      "image": "https://static.tvmaze.com/uploads/images/original_untouched/215/538434.jpg",
+      "smallImage": "https://static.tvmaze.com/uploads/images/medium_portrait/215/538434.jpg",
+      "premiered": "2014-04-06",
+      "year": "2014",
+      "ended": "2019-12-08",
+      "language": "English",
+      "genres": [
+        "Comedy"
+      ],
+      "summary": "<p>In the high-tech gold rush of modern Silicon Valley, the people most qualified to succeed are the least capable of handling success. From Mike Judge comes this satire about a programmer whose game-changing algorithm becomes the subject of a valley-wide bidding war.</p>"
+    },
+    {
+      "id": "3182",
+      "name": "American Gods",
+      "type": "Scripted",
+      "rating": 7.5,
+      "image": "https://static.tvmaze.com/uploads/images/original_untouched/289/722622.jpg",
+      "smallImage": "https://static.tvmaze.com/uploads/images/medium_portrait/289/722622.jpg",
+      "premiered": "2017-04-30",
+      "year": "2017",
+      "ended": "2021-03-21",
+      "language": "English",
+      "genres": [
+        "Drama",
+        "Action",
+        "Fantasy"
+      ],
+      "summary": "<p><b>American Gods</b> follows Shadow Moon, a man serving three years in prison who is given an early release. Shadow Moon is hired as Mr. Wednesday's bodyguard and finds himself in a hidden world where a battle is brewing between the Old Gods and the New Gods.</p>"
+    },
+    {
+      "id": "32938",
+      "name": "The Rookie",
+      "type": "Scripted",
+      "rating": 8,
+      "image": "https://static.tvmaze.com/uploads/images/original_untouched/547/1369006.jpg",
+      "smallImage": "https://static.tvmaze.com/uploads/images/medium_portrait/547/1369006.jpg",
+      "premiered": "2018-10-16",
+      "year": "2018",
+      "ended": "N/A",
+      "language": "English",
+      "genres": [
+        "Drama",
+        "Comedy",
+        "Crime"
+      ],
+      "summary": "<p><b>The Rookie</b> is inspired by a true story. John Nolan is the oldest rookie in the LAPD. At an age where most are at the peak of their career, Nolan cast aside his comfortable, small town life and moved to L.A. to pursue his dream of being a cop. Now, surrounded by rookies twenty years his junior, Nolan must navigate the dangerous, humorous and unpredictable world of a \"young\" cop, determined to make his second shot at life count.</p>"
+    },
+    {
+      "id": "37196",
+      "name": "Invincible",
+      "type": "Animation",
+      "rating": 8,
+      "image": "https://static.tvmaze.com/uploads/images/original_untouched/546/1367470.jpg",
+      "smallImage": "https://static.tvmaze.com/uploads/images/medium_portrait/546/1367470.jpg",
+      "premiered": "2021-03-26",
+      "year": "2021",
+      "ended": "N/A",
+      "language": "English",
+      "genres": [
+        "Drama",
+        "Action",
+        "Science-Fiction"
+      ],
+      "summary": "<p>Based on the eponymous comic book, <b>Invincible</b> revolves around Mark Grayson, a normal teenager except for the fact that his father is the most powerful superhero on the planet. Shortly after his 17th birthday, Mark begins to develop powers of his own and enters into his father's tutelage.</p>"
+    },
+    {
+      "id": "526",
+      "name": "The Office",
+      "type": "Scripted",
+      "rating": 8.5,
+      "image": "https://static.tvmaze.com/uploads/images/original_untouched/481/1204342.jpg",
+      "smallImage": "https://static.tvmaze.com/uploads/images/medium_portrait/481/1204342.jpg",
+      "premiered": "2005-03-24",
+      "year": "2005",
+      "ended": "2013-05-16",
+      "language": "English",
+      "genres": [
+        "Comedy"
+      ],
+      "summary": "<p>Steve Carell stars in <b>The Office</b>, a fresh and funny mockumentary-style glimpse into the daily interactions of the eccentric workers at the Dunder Mifflin paper supply company. Based on the smash-hit British series of the same name and adapted for American Television by Greg Daniels, this fast-paced comedy parodies contemporary American water-cooler culture. Earnest but clueless regional manager Michael Scott believes himself to be an exceptional boss and mentor, but actually receives more eye-rolls than respect from his oddball staff.</p>"
+    },
+    {
+      "id": "81128",
+      "name": "Cinderella Game",
+      "type": "Scripted",
+      "rating": "N/A",
+      "image": "https://static.tvmaze.com/uploads/images/original_untouched/545/1364355.jpg",
+      "smallImage": "https://static.tvmaze.com/uploads/images/medium_portrait/545/1364355.jpg",
+      "premiered": "2024-12-02",
+      "year": "2024",
+      "ended": "N/A",
+      "language": "Korean",
+      "genres": [
+        "Drama",
+        "Romance",
+        "Mystery"
+      ],
+      "summary": "<p>A woman was used as a fake daughter by her enemy and became the embodiment of revenge. She grows and heals as she realizes the true meaning of revenge.</p>"
+    },
+    {
+      "id": "168",
+      "name": "Chuck",
+      "type": "Scripted",
+      "rating": 8.3,
+      "image": "https://static.tvmaze.com/uploads/images/original_untouched/0/2385.jpg",
+      "smallImage": "https://static.tvmaze.com/uploads/images/medium_portrait/0/2385.jpg",
+      "premiered": "2007-09-24",
+      "year": "2007",
+      "ended": "2012-01-27",
+      "language": "English",
+      "genres": [
+        "Drama",
+        "Comedy",
+        "Action"
+      ],
+      "summary": "<p><b>Chuck</b> Bartowski is a computer geek that gets catapulted into a new career as the government's most vital secret agent. When Chuck opens an e-mail subliminally encoded with government secrets, he unwittingly downloads an entire server of sensitive data into his brain. With the government's most precious secrets in Chuck's head, Major John Casey of the National Security Agency assumes the responsibility of protecting him. His partner is the CIA's top agent, Sarah Walker.</p>"
+    }
+  ]
+}
