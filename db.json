@@ -124,38 +124,22 @@
       "summary": "<p>Based on the eponymous comic book, <b>Invincible</b> revolves around Mark Grayson, a normal teenager except for the fact that his father is the most powerful superhero on the planet. Shortly after his 17th birthday, Mark begins to develop powers of his own and enters into his father's tutelage.</p>"
     },
     {
-      "id": "526",
-      "name": "The Office",
-      "type": "Scripted",
-      "rating": 8.5,
-      "image": "https://static.tvmaze.com/uploads/images/original_untouched/481/1204342.jpg",
-      "smallImage": "https://static.tvmaze.com/uploads/images/medium_portrait/481/1204342.jpg",
-      "premiered": "2005-03-24",
-      "year": "2005",
-      "ended": "2013-05-16",
-      "language": "English",
-      "genres": [
-        "Comedy"
-      ],
-      "summary": "<p>Steve Carell stars in <b>The Office</b>, a fresh and funny mockumentary-style glimpse into the daily interactions of the eccentric workers at the Dunder Mifflin paper supply company. Based on the smash-hit British series of the same name and adapted for American Television by Greg Daniels, this fast-paced comedy parodies contemporary American water-cooler culture. Earnest but clueless regional manager Michael Scott believes himself to be an exceptional boss and mentor, but actually receives more eye-rolls than respect from his oddball staff.</p>"
-    },
-    {
-      "id": "81128",
-      "name": "Cinderella Game",
-      "type": "Scripted",
-      "rating": "N/A",
-      "image": "https://static.tvmaze.com/uploads/images/original_untouched/545/1364355.jpg",
-      "smallImage": "https://static.tvmaze.com/uploads/images/medium_portrait/545/1364355.jpg",
-      "premiered": "2024-12-02",
-      "year": "2024",
+      "id": "4201",
+      "name": "One-Punch Man",
+      "type": "Animation",
+      "rating": 8.3,
+      "image": "https://static.tvmaze.com/uploads/images/original_untouched/177/444456.jpg",
+      "smallImage": "https://static.tvmaze.com/uploads/images/medium_portrait/177/444456.jpg",
+      "premiered": "2015-10-06",
+      "year": "2015",
       "ended": "N/A",
-      "language": "Korean",
+      "language": "Japanese",
       "genres": [
-        "Drama",
-        "Romance",
-        "Mystery"
+        "Comedy",
+        "Action",
+        "Anime"
       ],
-      "summary": "<p>A woman was used as a fake daughter by her enemy and became the embodiment of revenge. She grows and heals as she realizes the true meaning of revenge.</p>"
+      "summary": "<p><b>One-Punch Man</b> is a super hero who has trained so hard that his hair has fallen out, and who can overcome any enemy with one punch. However, because he is so strong, he has become bored and frustrated with winning all his battles so easily.</p>"
     },
     {
       "id": "168",
@@ -174,6 +158,41 @@
         "Action"
       ],
       "summary": "<p><b>Chuck</b> Bartowski is a computer geek that gets catapulted into a new career as the government's most vital secret agent. When Chuck opens an e-mail subliminally encoded with government secrets, he unwittingly downloads an entire server of sensitive data into his brain. With the government's most precious secrets in Chuck's head, Major John Casey of the National Security Agency assumes the responsibility of protecting him. His partner is the CIA's top agent, Sarah Walker.</p>"
+    },
+    {
+      "id": "5079",
+      "name": "Tom Clancy's Jack Ryan",
+      "type": "Scripted",
+      "rating": 7.9,
+      "image": "https://static.tvmaze.com/uploads/images/original_untouched/486/1215704.jpg",
+      "smallImage": "https://static.tvmaze.com/uploads/images/medium_portrait/486/1215704.jpg",
+      "premiered": "2018-08-31",
+      "year": "2018",
+      "ended": "2023-07-14",
+      "language": "English",
+      "genres": [
+        "Drama",
+        "Action",
+        "Espionage"
+      ],
+      "summary": "<p><b>Jack Ryan</b> is a drama featuring Tom Clancy's popular hero Jack Ryan billed as a new contemporary take on the character in his prime as a CIA analyst/operative using the novels as source material.</p>"
+    },
+    {
+      "id": "172",
+      "name": "Suits",
+      "type": "Scripted",
+      "rating": 8.1,
+      "image": "https://static.tvmaze.com/uploads/images/original_untouched/393/983536.jpg",
+      "smallImage": "https://static.tvmaze.com/uploads/images/medium_portrait/393/983536.jpg",
+      "premiered": "2011-06-23",
+      "year": "2011",
+      "ended": "2019-09-25",
+      "language": "English",
+      "genres": [
+        "Drama",
+        "Legal"
+      ],
+      "summary": "<p><b>Suits</b> delves into the fast-paced, high-stakes world of a top Manhattan corporate law firm where hotshot associate Harvey Specter makes a risky move by hiring Mike Ross a brilliant but unmotivated college dropout, as his associate. As he becomes enmeshed in this unfamiliar world, Mike relies heavily on the firm's best paralegal Rachel Zane and Harvey's no-nonsense assistant Donna Paulsen to help him serve justice. With a photographic memory and the street smarts of a hustler, Mike proves to be a legal prodigy despite the absence of bonafide legal credentials.</p>"
     }
   ]
 }
