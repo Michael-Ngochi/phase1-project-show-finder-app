@@ -19,24 +19,6 @@
       "summary": "<p>Set in utopian Piltover and the oppressed underground of Zaun, the story follows the origins of two iconic League champions — and the power that will tear them apart.</p>"
     },
     {
-      "id": "43031",
-      "name": "Reacher",
-      "type": "Scripted",
-      "rating": 8.2,
-      "image": "https://static.tvmaze.com/uploads/images/original_untouched/557/1392929.jpg",
-      "smallImage": "https://static.tvmaze.com/uploads/images/medium_portrait/557/1392929.jpg",
-      "premiered": "2022-02-04",
-      "year": "2022",
-      "ended": "N/A",
-      "language": "English",
-      "genres": [
-        "Drama",
-        "Action",
-        "Thriller"
-      ],
-      "summary": "<p><b>Reacher</b><i> </i>follows Jack Reacher, a veteran military police investigator who has just recently entered civilian life. Reacher is a drifter, carrying no phone and the barest of essentials as he travels the country and explores the nation he once served. When Reacher arrives in the small town of Margrave, Georgia, he finds a community grappling with its first homicide in 20 years. The cops immediately arrest him and eyewitnesses claim to place Reacher at the scene of the crime. While he works to prove his innocence, a deep-seated conspiracy begins to emerge, one that will require Reacher's keen mind and hard-hitting fists to deal with. One thing above all is for sure: They picked the wrong guy to take the fall.</p>"
-    },
-    {
       "id": "17078",
       "name": "The Grand Tour",
       "type": "Reality",
@@ -193,6 +175,24 @@
         "Legal"
       ],
       "summary": "<p><b>Suits</b> delves into the fast-paced, high-stakes world of a top Manhattan corporate law firm where hotshot associate Harvey Specter makes a risky move by hiring Mike Ross a brilliant but unmotivated college dropout, as his associate. As he becomes enmeshed in this unfamiliar world, Mike relies heavily on the firm's best paralegal Rachel Zane and Harvey's no-nonsense assistant Donna Paulsen to help him serve justice. With a photographic memory and the street smarts of a hustler, Mike proves to be a legal prodigy despite the absence of bonafide legal credentials.</p>"
+    },
+    {
+      "id": "43031",
+      "name": "Reacher",
+      "type": "Scripted",
+      "rating": 8.2,
+      "image": "https://static.tvmaze.com/uploads/images/original_untouched/557/1392929.jpg",
+      "smallImage": "https://static.tvmaze.com/uploads/images/medium_portrait/557/1392929.jpg",
+      "premiered": "2022-02-04",
+      "year": "2022",
+      "ended": "N/A",
+      "language": "English",
+      "genres": [
+        "Drama",
+        "Action",
+        "Thriller"
+      ],
+      "summary": "<p><b>Reacher</b><i> </i>follows Jack Reacher, a veteran military police investigator who has just recently entered civilian life. Reacher is a drifter, carrying no phone and the barest of essentials as he travels the country and explores the nation he once served. When Reacher arrives in the small town of Margrave, Georgia, he finds a community grappling with its first homicide in 20 years. The cops immediately arrest him and eyewitnesses claim to place Reacher at the scene of the crime. While he works to prove his innocence, a deep-seated conspiracy begins to emerge, one that will require Reacher's keen mind and hard-hitting fists to deal with. One thing above all is for sure: They picked the wrong guy to take the fall.</p>"
     }
   ]
 }

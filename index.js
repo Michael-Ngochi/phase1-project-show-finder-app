@@ -60,7 +60,7 @@ async function searchMovie(moviename){
     essentialData.forEach((show)=>{
          showmovies(show) //display the searched shows on the page
     })
-     console.log(essentialData);
+     // console.log(essentialData);
     }
     
     function showmovies(movie){
@@ -88,7 +88,7 @@ async function searchMovie(moviename){
 
     //function to fetch further info on tv show by id
     async function getFullInfo(id){
-        console.log(`fetching for id:${id}`);
+     //    console.log(`fetching for id:${id}`);
          const res=await fetch(`https://api.tvmaze.com/shows/${id}`)
          const show=await res.json()
    
@@ -183,7 +183,7 @@ async function getcast(showId) {
        favouritesBody.innerHTML = ""; // Clear previous content if needed
    
        for (const show of shows) {
-         console.log(show);
+     //     console.log(show);
    
          const moviecard = document.createElement("div");
          moviecard.className = "card movie-card";
@@ -240,7 +240,7 @@ async function getcast(showId) {
      //   console.log("cheking for show:"+id);
 
        const found = favourites.some(show => show.id === id);
-       console.log(found);
+     //   console.log(found);
        const heartIcon = document.getElementById("heartIcon");
    
        if (found) {
